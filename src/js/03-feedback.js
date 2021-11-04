@@ -21,8 +21,8 @@ function formDataToLocalStorage() {
 
 function formSubmit(event) {
     event.preventDefault();
-    event.currentTarget.reset();
     console.log(parsedSavedData);
+    event.currentTarget.reset();
     localStorage.removeItem(LOCAL_STORAGE_KEY);    
 };
 
